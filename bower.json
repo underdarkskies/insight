@@ -16,7 +16,7 @@
     "angular-moment": "~0.8.0",
     "ngclipboard": "^2.0.0",
     "bignumber.js": "4.0.4",
-    "chart.js": "^2.6.0",
+    "chart.js": "2.7.2",
     "angular-chart.js": "^1.1.1",
 	  "numeral": "^2.0.6",
 	  "angular-numeraljs": "^2.0.1"
