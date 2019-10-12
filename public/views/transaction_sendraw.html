@@ -36,19 +36,18 @@
           <div ng-show="status == 'loading'" translate>
             Loading...
           </div>
-          <div ng-show="status == 'sent'" class="alert alert-success" translate>
-            Transaction succesfully broadcast.<br>Transaction id: {{txid}}
+          <div ng-show="status == 'sent'" class="alert alert-success">
+            <span translate>Transaction succesfully broadcast.</span><br><span translate>Transaction id:</span>&nbsp;<span>{{txid}}</span>
           </div>
-          <div ng-show="status == 'error'" class="alert alert-warning" translate>
-            An error occured:<br>{{error}}
+          <div ng-show="status == 'error'" class="alert alert-warning">
+            <span translate>An error occured:</span><br>{{error}}
           </div>
         </div>
       </div>
     </div>
     <div class="col-xs-12 col-md-4 col-gray">
       <p translate>
-        This form can be used to broadcast a raw transaction in hex format over
-        the Ravencoin network.
+        This form can be used to broadcast a raw transaction in hex format over the Ravencoin network.
       </p>
     </div>
   </div>

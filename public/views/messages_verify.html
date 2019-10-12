@@ -50,8 +50,8 @@
             Loading...
           </div>
           <div ng-show="verification.status == 'verified' && verification.result"
-               class="alert alert-success" translate>
-            The message is verifiably from {{verification.address}}.
+               class="alert alert-success">
+            <span translate>The message is verifiably from</span>&nbsp;<span>{{verification.address}}.</span>
           </div>
           <div ng-show="verification.status == 'verified' && !verification.result"
                class="alert alert-danger" translate>
@@ -73,8 +73,7 @@
         Ravencoin comes with a way of signing arbitrary messages.
       </p>
       <p translate>
-        This form can be used to verify that a message comes from
-        a specific Ravencoin address.
+        This form can be used to verify that a message comes from a specific Ravencoin address.
       </p>
     </div>
   </div>

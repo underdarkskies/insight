@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.2.4\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
@@ -20,22 +20,6 @@ msgstr "(Вход неподтвержденный)"
 #: public/views/rich_list.html
 msgid "(the top 200 richest addresses)"
 msgstr "(лучшие 200 самых богатых адресов)"
-
-#: public/views/network.html
-msgid "{{p.uptime.Days}} days"
-msgstr "{{p.uptime.Days}} days"
-
-#: public/views/network.html
-msgid "{{p.uptime.Hours}} hrs"
-msgstr "{{p.uptime.Hours}} hrs"
-
-#: public/views/network.html
-msgid "{{p.uptime.Minutes}} mins"
-msgstr "{{p.uptime.Minutes}} mins"
-
-#: public/views/network.html
-msgid "{{p.uptime.Seconds}} secs"
-msgstr "{{p.uptime.Seconds}} secs"
 
 #: public/views/pools.html
 msgid "# of Blocks Found"
@@ -93,8 +77,12 @@ msgid "An error occured in the verification process."
 msgstr "В процессе проверки произошла ошибка."
 
 #: public/views/transaction_sendraw.html
-msgid "An error occured:<br>{{error}}"
-msgstr "Произошла ошибка:<br>{{error}}"
+msgid "An error occured:"
+msgstr "Произошла ошибка:"
+
+#: public/views/includes/connection.html
+msgid "and failed.)"
+msgstr "и не удалось.)"
 
 #: public/views/status.html
 msgid "Application Status"
@@ -133,6 +121,10 @@ msgstr "Резюме блока"
 msgid "Blocks"
 msgstr "Блоки"
 
+#: public/views/statistics.html
+msgid "blocks found"
+msgstr "найденные блоки"
+
 #: public/views/rich_list.html
 msgid "Blocks Mined"
 msgstr "Блокирование мин"
@@ -165,10 +157,10 @@ msgstr "Не удается подключиться к Интернету. Пр
 #: public/views/includes/connection.html
 msgid ""
 "Can't connect to ravend to get live updates from the p2p network. (Tried "
-"connecting to ravend at {{host}}:{{port}} and failed.)"
+"connecting to ravend at"
 msgstr ""
-"Невозможно подключиться к ravend для получения живых обновлений из сети p2p. "
-"(Пробовал подключиться к ravend на {{host}}: {{port}} и не удалось.)"
+"Не удается подключиться к ravend, чтобы получать живые обновления из сети "
+"p2p. (Пробовал подключаться к ravend на"
 
 #: public/views/rich_list.html
 msgid "Coins"
@@ -181,6 +173,10 @@ msgstr "полный"
 #: public/views/transaction.html public/views/transaction/tx.html
 msgid "Confirmations"
 msgstr "Подтверждения"
+
+#: public/views/address.html
+msgid "confirmed"
+msgstr "подтвердил"
 
 #: public/views/includes/header.html
 msgid "Conn"
@@ -209,6 +205,10 @@ msgstr "Текущая сетевая атака"
 #: public/views/status.html
 msgid "Current Sync Status"
 msgstr "Текущий статус синхронизации"
+
+#: public/views/network.html
+msgid "days"
+msgstr "дней"
 
 #: public/views/transaction.html
 msgid "Details"
@@ -246,6 +246,10 @@ msgstr "Сообщение об ошибке:"
 msgid "Error!"
 msgstr "Ошибка!"
 
+#: public/views/index.html
+msgid "Explorer is now available at"
+msgstr "Проводник теперь доступен на"
+
 #: public/views/transaction/tx.html
 msgid "Fee"
 msgstr "плата"
@@ -278,6 +282,10 @@ msgstr "Высота"
 #: public/views/index.html
 msgid "here"
 msgstr "Вот"
+
+#: public/views/network.html
+msgid "hrs"
+msgstr "часов"
 
 #: public/views/transaction.html public/views/transaction/tx.html
 msgid "Included in Block"
@@ -392,6 +400,10 @@ msgstr "Время простоя"
 msgid "Mining Difficulty"
 msgstr "Трудность добычи"
 
+#: public/views/network.html
+msgid "mins"
+msgstr "мин"
+
 #: public/views/statistics.html
 msgid "minutes"
 msgstr "минут"
@@ -444,9 +456,13 @@ msgstr "Старые блоки с этой даты"
 msgid "Output"
 msgstr "Вывод"
 
-#: public/views/statistics.html
-msgid "Percent of total(blocks found)"
-msgstr "Процент от общего числа (найденные блоки)"
+#: public/views/pools.html public/views/statistics.html
+msgid "Percent of"
+msgstr "Процент от"
+
+#: public/views/pools.html
+msgid "Pool Address"
+msgstr "Адрес пула"
 
 #: public/views/pools.html
 msgid "Pool Name"
@@ -538,6 +554,10 @@ msgstr "Богатый список"
 msgid "Search for block, transaction or address"
 msgstr "Поиск блока, транзакции или адреса"
 
+#: public/views/network.html
+msgid "secs"
+msgstr "сек"
+
 #: public/views/index.html
 msgid "See all blocks"
 msgstr "Просмотреть все блоки"
@@ -591,13 +611,10 @@ msgstr "Статистика"
 msgid "Status"
 msgstr "статус"
 
-#: public/views/block.html public/views/transaction.html
+#: public/views/address.html public/views/block.html
+#: public/views/transaction.html
 msgid "Summary"
 msgstr "краткое изложение"
-
-#: public/views/address.html
-msgid "Summary <small>confirmed</small>"
-msgstr "краткое изложение <small>подтвердил</small>"
 
 #: public/views/status.html
 msgid "Sync Progress"
@@ -615,6 +632,10 @@ msgstr "Тип синхронизации"
 msgid "Synced Blocks"
 msgstr "Синхронизированные блоки"
 
+#: public/views/index.html
+msgid "TESTNET"
+msgstr "TESTNET"
+
 #: public/views/charts.html
 msgid "The current supply of Ravencoin on the network."
 msgstr "Текущая поставка Ravencoin в сети."
@@ -628,8 +649,8 @@ msgid "The message failed to verify."
 msgstr "Сообщение не удалось проверить."
 
 #: public/views/messages_verify.html
-msgid "The message is verifiably from {{verification.address}}."
-msgstr "Сообщение проверяется с {{verify.address}}."
+msgid "The message is verifiably from"
+msgstr "Сообщение достоверно от"
 
 #: public/views/dummy-translations.html
 msgid "The number of daily confirmed RVN transactions."
@@ -649,19 +670,19 @@ msgstr "С этим адресом нет транзакций."
 
 #: public/views/transaction_sendraw.html
 msgid ""
-"This form can be used to broadcast a raw transaction in hex format over\n"
-"        the Ravencoin network."
+"This form can be used to broadcast a raw transaction in hex format over the "
+"Ravencoin network."
 msgstr ""
-"Эта форма может использоваться для трансляции исходной транзакции\n"
-"        в шестнадцатеричном формате сети Ravencoin."
+"Эта форма может использоваться для трансляции исходной транзакции в "
+"шестнадцатеричном формате сети Ravencoin."
 
 #: public/views/messages_verify.html
 msgid ""
-"This form can be used to verify that a message comes from\n"
-"        a specific Ravencoin address."
+"This form can be used to verify that a message comes from a specific "
+"Ravencoin address."
 msgstr ""
-"Эта форма может использоваться для проверки того, что\n"
-"        сообщение поступает из конкретный адрес Равенкойна."
+"Эта форма может использоваться для проверки того, что сообщение поступает из "
+"конкретный адрес Равенкойна."
 
 #: public/views/statistics.html
 msgid "Time Between Blocks:"
@@ -678,6 +699,10 @@ msgstr "Отметка"
 #: public/views/block_list.html
 msgid "Today"
 msgstr "Cегодня"
+
+#: public/views/pools.html
+msgid "total blocks found:"
+msgstr "Всего найдено блоков:"
 
 #: public/views/statistics.html
 msgid "Total Circulating Supply:"
@@ -708,9 +733,12 @@ msgid "Transaction"
 msgstr "Сделка"
 
 #: public/views/transaction_sendraw.html
-msgid "Transaction succesfully broadcast.<br>Transaction id: {{txid}}"
-msgstr ""
-"Транзакция успешно транслируется.<br>Идентификатор транзакции: {{txid}}"
+msgid "Transaction id:"
+msgstr "ID транзакции:"
+
+#: public/views/transaction_sendraw.html
+msgid "Transaction succesfully broadcast."
+msgstr "Транзакция успешно передана."
 
 #: public/views/statistics.html
 msgid "Transaction Summary"
@@ -777,8 +805,20 @@ msgstr "Ожидание бассейнов ..."
 msgid "Waiting for transactions..."
 msgstr "Ожидание транзакций ..."
 
-#~ msgid "Charts"
-#~ msgstr "Графики"
+#~ msgid "{{p.uptime.Days}} days"
+#~ msgstr "{{p.uptime.Days}} days"
+
+#~ msgid "{{p.uptime.Hours}} hrs"
+#~ msgstr "{{p.uptime.Hours}} hrs"
+
+#~ msgid "{{p.uptime.Minutes}} mins"
+#~ msgstr "{{p.uptime.Minutes}} mins"
+
+#~ msgid "{{p.uptime.Seconds}} secs"
+#~ msgstr "{{p.uptime.Seconds}} secs"
+
+#~ msgid "Summary <small>confirmed</small>"
+#~ msgstr "краткое изложение <small>подтвердил</small>"
 
 #~ msgid "Loading chart..."
 #~ msgstr "Загрузка диаграммы ..."

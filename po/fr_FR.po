@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.2.4\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: public/views/transaction/tx.html
@@ -19,22 +19,6 @@ msgstr "(Entrée non confirmée)"
 #: public/views/rich_list.html
 msgid "(the top 200 richest addresses)"
 msgstr "(top 200 des adresses les plus riches)"
-
-#: public/views/network.html
-msgid "{{p.uptime.Days}} days"
-msgstr "{{p.uptime.Days}} days"
-
-#: public/views/network.html
-msgid "{{p.uptime.Hours}} hrs"
-msgstr "{{p.uptime.Hours}} hrs"
-
-#: public/views/network.html
-msgid "{{p.uptime.Minutes}} mins"
-msgstr "{{p.uptime.Minutes}} mins"
-
-#: public/views/network.html
-msgid "{{p.uptime.Seconds}} secs"
-msgstr "{{p.uptime.Seconds}} secs"
 
 #: public/views/pools.html
 msgid "# of Blocks Found"
@@ -92,8 +76,12 @@ msgid "An error occured in the verification process."
 msgstr "Une erreur s'est produite dans le processus de vérification."
 
 #: public/views/transaction_sendraw.html
-msgid "An error occured:<br>{{error}}"
-msgstr "Une erreur est survenue:<br>{{error}}"
+msgid "An error occured:"
+msgstr "Une erreur est survenue:"
+
+#: public/views/includes/connection.html
+msgid "and failed.)"
+msgstr "et j'ai échoué.)"
 
 #: public/views/status.html
 msgid "Application Status"
@@ -132,6 +120,10 @@ msgstr "Résumé des Blocs"
 msgid "Blocks"
 msgstr "Blocs"
 
+#: public/views/statistics.html
+msgid "blocks found"
+msgstr "blocs trouvés"
+
 #: public/views/rich_list.html
 msgid "Blocks Mined"
 msgstr "Blocs minés"
@@ -166,11 +158,10 @@ msgstr ""
 #: public/views/includes/connection.html
 msgid ""
 "Can't connect to ravend to get live updates from the p2p network. (Tried "
-"connecting to ravend at {{host}}:{{port}} and failed.)"
+"connecting to ravend at"
 msgstr ""
 "Impossible de se connecter à ravend pour obtenir des mises à jour en direct "
-"du réseau p2p. (J'ai essayé de vous connecter à {{host}}:{{port}} et j'ai "
-"échoué.)"
+"du réseau p2p. (J'ai essayé de vous connecter à"
 
 #: public/views/rich_list.html
 msgid "Coins"
@@ -183,6 +174,10 @@ msgstr "Terminé"
 #: public/views/transaction.html public/views/transaction/tx.html
 msgid "Confirmations"
 msgstr "Confirmations"
+
+#: public/views/address.html
+msgid "confirmed"
+msgstr "confirmé"
 
 #: public/views/includes/header.html
 msgid "Conn"
@@ -211,6 +206,10 @@ msgstr "Taux de hachage actuel du réseau"
 #: public/views/status.html
 msgid "Current Sync Status"
 msgstr "État actuel de la synchronisation"
+
+#: public/views/network.html
+msgid "days"
+msgstr "journées"
 
 #: public/views/transaction.html
 msgid "Details"
@@ -248,6 +247,10 @@ msgstr "Message d'erreur:"
 msgid "Error!"
 msgstr "Erreur!"
 
+#: public/views/index.html
+msgid "Explorer is now available at"
+msgstr "Explorer est maintenant disponible sur"
+
 #: public/views/transaction/tx.html
 msgid "Fee"
 msgstr "Frais"
@@ -280,6 +283,10 @@ msgstr "Hauteur"
 #: public/views/index.html
 msgid "here"
 msgstr "ici"
+
+#: public/views/network.html
+msgid "hrs"
+msgstr "heures"
 
 #: public/views/transaction.html public/views/transaction/tx.html
 msgid "Included in Block"
@@ -384,7 +391,7 @@ msgstr "Miné par"
 
 #: public/views/block_list.html
 msgid "mined on:"
-msgstr "Miné le:"
+msgstr "miné le:"
 
 #: public/views/transaction.html
 msgid "Mined Time"
@@ -393,6 +400,10 @@ msgstr "Moment du minage"
 #: public/views/status.html
 msgid "Mining Difficulty"
 msgstr "Difficulté de Minage"
+
+#: public/views/network.html
+msgid "mins"
+msgstr "minutes"
 
 #: public/views/statistics.html
 msgid "minutes"
@@ -446,9 +457,13 @@ msgstr "Blocs plus anciens à partir de cette date"
 msgid "Output"
 msgstr "Sortie"
 
-#: public/views/statistics.html
-msgid "Percent of total(blocks found)"
-msgstr "Pourcentage du total (blocs trouvés)"
+#: public/views/pools.html public/views/statistics.html
+msgid "Percent of"
+msgstr "Pourcentage de"
+
+#: public/views/pools.html
+msgid "Pool Address"
+msgstr "Adresse de la Pool"
 
 #: public/views/pools.html
 msgid "Pool Name"
@@ -540,6 +555,10 @@ msgstr "Rich list"
 msgid "Search for block, transaction or address"
 msgstr "Recherche de bloc, transaction ou adresse"
 
+#: public/views/network.html
+msgid "secs"
+msgstr "secondes"
+
 #: public/views/index.html
 msgid "See all blocks"
 msgstr "Voir tous les blocs"
@@ -593,13 +612,10 @@ msgstr "Statistiques"
 msgid "Status"
 msgstr "État"
 
-#: public/views/block.html public/views/transaction.html
+#: public/views/address.html public/views/block.html
+#: public/views/transaction.html
 msgid "Summary"
 msgstr "Résumé"
-
-#: public/views/address.html
-msgid "Summary <small>confirmed</small>"
-msgstr "Résumé <small>confirmé</small>"
 
 #: public/views/status.html
 msgid "Sync Progress"
@@ -617,6 +633,10 @@ msgstr "Type de Synchronisation"
 msgid "Synced Blocks"
 msgstr "Blocs synchronisés"
 
+#: public/views/index.html
+msgid "TESTNET"
+msgstr "TESTNET"
+
 #: public/views/charts.html
 msgid "The current supply of Ravencoin on the network."
 msgstr "L'offre actuelle de Ravencoin sur le réseau."
@@ -630,8 +650,8 @@ msgid "The message failed to verify."
 msgstr "Le message n'a pas pu être vérifié."
 
 #: public/views/messages_verify.html
-msgid "The message is verifiably from {{verification.address}}."
-msgstr "Le message est vérifiable depuis {{verification.address}}."
+msgid "The message is verifiably from"
+msgstr "Le message est vérifiable depuis"
 
 #: public/views/dummy-translations.html
 msgid "The number of daily confirmed RVN transactions."
@@ -651,20 +671,19 @@ msgstr "Il n'y a aucune transaction impliquant cette adresse."
 
 #: public/views/transaction_sendraw.html
 msgid ""
-"This form can be used to broadcast a raw transaction in hex format over\n"
-"        the Ravencoin network."
+"This form can be used to broadcast a raw transaction in hex format over the "
+"Ravencoin network."
 msgstr ""
 "Ce formulaire peut être utilisé pour diffuser une transaction brute au "
-"format hexadécimal\n"
-"         le réseau Ravencoin."
+"format hexadécimal le réseau Ravencoin."
 
 #: public/views/messages_verify.html
 msgid ""
-"This form can be used to verify that a message comes from\n"
-"        a specific Ravencoin address."
+"This form can be used to verify that a message comes from a specific "
+"Ravencoin address."
 msgstr ""
-"Ce formulaire peut être utilisé pour vérifier qu'un message provient de\n"
-"         une adresse Ravencoin spécifique."
+"Ce formulaire peut être utilisé pour vérifier qu'un message provient de une "
+"adresse Ravencoin spécifique."
 
 #: public/views/statistics.html
 msgid "Time Between Blocks:"
@@ -681,6 +700,10 @@ msgstr "Horodatage"
 #: public/views/block_list.html
 msgid "Today"
 msgstr "Aujourd’hui"
+
+#: public/views/pools.html
+msgid "total blocks found:"
+msgstr "nombre total de blocs trouvés:"
 
 #: public/views/statistics.html
 msgid "Total Circulating Supply:"
@@ -711,9 +734,12 @@ msgid "Transaction"
 msgstr "Transaction"
 
 #: public/views/transaction_sendraw.html
-msgid "Transaction succesfully broadcast.<br>Transaction id: {{txid}}"
-msgstr ""
-"Transaction diffusée avec succès.<br>Identifiant de la transaction: {{txid}}"
+msgid "Transaction id:"
+msgstr "ID de transaction:"
+
+#: public/views/transaction_sendraw.html
+msgid "Transaction succesfully broadcast."
+msgstr "Transaction diffusée avec succès."
 
 #: public/views/statistics.html
 msgid "Transaction Summary"
@@ -779,3 +805,18 @@ msgstr "En attente de pools ..."
 #: public/views/index.html
 msgid "Waiting for transactions..."
 msgstr "En attente des transactions…"
+
+#~ msgid "{{p.uptime.Days}} days"
+#~ msgstr "{{p.uptime.Days}} days"
+
+#~ msgid "{{p.uptime.Hours}} hrs"
+#~ msgstr "{{p.uptime.Hours}} hrs"
+
+#~ msgid "{{p.uptime.Minutes}} mins"
+#~ msgstr "{{p.uptime.Minutes}} mins"
+
+#~ msgid "{{p.uptime.Seconds}} secs"
+#~ msgstr "{{p.uptime.Seconds}} secs"
+
+#~ msgid "Summary <small>confirmed</small>"
+#~ msgstr "Résumé <small>confirmé</small>"

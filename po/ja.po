@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.2.4\n"
 
 #: public/views/transaction/tx.html
 msgid "(Input unconfirmed)"
@@ -18,22 +18,6 @@ msgstr "(入力は未検証です)"
 #: public/views/rich_list.html
 msgid "(the top 200 richest addresses)"
 msgstr "（上位200の最も豊かなアドレス）"
-
-#: public/views/network.html
-msgid "{{p.uptime.Days}} days"
-msgstr "{{p.uptime.Days}} days"
-
-#: public/views/network.html
-msgid "{{p.uptime.Hours}} hrs"
-msgstr "{{p.uptime.Hours}} hrs"
-
-#: public/views/network.html
-msgid "{{p.uptime.Minutes}} mins"
-msgstr "{{p.uptime.Minutes}} mins"
-
-#: public/views/network.html
-msgid "{{p.uptime.Seconds}} secs"
-msgstr "{{p.uptime.Seconds}} secs"
 
 #: public/views/pools.html
 msgid "# of Blocks Found"
@@ -91,8 +75,12 @@ msgid "An error occured in the verification process."
 msgstr "検証過程でエラーが発生しました。"
 
 #: public/views/transaction_sendraw.html
-msgid "An error occured:<br>{{error}}"
-msgstr "エラーが発生しました:<br>{{error}}"
+msgid "An error occured:"
+msgstr "エラーが発生しました:"
+
+#: public/views/includes/connection.html
+msgid "and failed.)"
+msgstr "への接続を試みましたが、失敗しました。)"
 
 #: public/views/status.html
 msgid "Application Status"
@@ -131,6 +119,10 @@ msgstr "ブロックサマリー"
 msgid "Blocks"
 msgstr "ブロック"
 
+#: public/views/statistics.html
+msgid "blocks found"
+msgstr "見つかったブロック"
+
 #: public/views/rich_list.html
 msgid "Blocks Mined"
 msgstr "ブロックされたブロック"
@@ -162,10 +154,10 @@ msgstr "インターネットに接続できません。コネクションを確
 #: public/views/includes/connection.html
 msgid ""
 "Can't connect to ravend to get live updates from the p2p network. (Tried "
-"connecting to ravend at {{host}}:{{port}} and failed.)"
+"connecting to ravend at"
 msgstr ""
 "P2Pネットワークからライブ情報を取得するためにravendへ接続することができません"
-"でした。({{host}}:{{port}} への接続を試みましたが、失敗しました。)"
+"でした。"
 
 #: public/views/rich_list.html
 msgid "Coins"
@@ -178,6 +170,10 @@ msgstr "完了"
 #: public/views/transaction.html public/views/transaction/tx.html
 msgid "Confirmations"
 msgstr "検証数"
+
+#: public/views/address.html
+msgid "confirmed"
+msgstr "確認済み"
 
 #: public/views/includes/header.html
 msgid "Conn"
@@ -206,6 +202,10 @@ msgstr "現在のネットワークハッシュレート"
 #: public/views/status.html
 msgid "Current Sync Status"
 msgstr "現在の同期状況"
+
+#: public/views/network.html
+msgid "days"
+msgstr "日々"
 
 #: public/views/transaction.html
 msgid "Details"
@@ -243,6 +243,10 @@ msgstr "エラーメッセージ:"
 msgid "Error!"
 msgstr "エラー！"
 
+#: public/views/index.html
+msgid "Explorer is now available at"
+msgstr "Explorerは現在、"
+
 #: public/views/transaction/tx.html
 msgid "Fee"
 msgstr "手数料"
@@ -275,6 +279,10 @@ msgstr "ブロック高"
 #: public/views/index.html
 msgid "here"
 msgstr "ここに"
+
+#: public/views/network.html
+msgid "hrs"
+msgstr "時間"
 
 #: public/views/transaction.html public/views/transaction/tx.html
 msgid "Included in Block"
@@ -389,6 +397,10 @@ msgstr "採掘時刻"
 msgid "Mining Difficulty"
 msgstr "採掘難易度"
 
+#: public/views/network.html
+msgid "mins"
+msgstr "分"
+
 #: public/views/statistics.html
 msgid "minutes"
 msgstr "分"
@@ -441,9 +453,13 @@ msgstr "この日から古いブロック"
 msgid "Output"
 msgstr "出力"
 
-#: public/views/statistics.html
-msgid "Percent of total(blocks found)"
-msgstr "合計のパーセント（見つかったブロック）"
+#: public/views/pools.html public/views/statistics.html
+msgid "Percent of"
+msgstr "の割合"
+
+#: public/views/pools.html
+msgid "Pool Address"
+msgstr "プールアドレス"
 
 #: public/views/pools.html
 msgid "Pool Name"
@@ -533,6 +549,10 @@ msgstr "リッチリスト"
 msgid "Search for block, transaction or address"
 msgstr "ブロック、トランザクション、アドレスを検索"
 
+#: public/views/network.html
+msgid "secs"
+msgstr "秒"
+
 #: public/views/index.html
 msgid "See all blocks"
 msgstr "すべてのブロックをみる"
@@ -586,13 +606,10 @@ msgstr "統計"
 msgid "Status"
 msgstr "ステータス"
 
-#: public/views/block.html public/views/transaction.html
+#: public/views/address.html public/views/block.html
+#: public/views/transaction.html
 msgid "Summary"
 msgstr "概要"
-
-#: public/views/address.html
-msgid "Summary <small>confirmed</small>"
-msgstr "サマリ <small>検証済み</small>"
 
 #: public/views/status.html
 msgid "Sync Progress"
@@ -610,6 +627,10 @@ msgstr "同期タイプ"
 msgid "Synced Blocks"
 msgstr "同期されたブロック数"
 
+#: public/views/index.html
+msgid "TESTNET"
+msgstr "TESTNET"
+
 #: public/views/charts.html
 msgid "The current supply of Ravencoin on the network."
 msgstr "ネットワーク上のRavencoinの現在の供給。"
@@ -623,8 +644,8 @@ msgid "The message failed to verify."
 msgstr "メッセージの検証に失敗しました。"
 
 #: public/views/messages_verify.html
-msgid "The message is verifiably from {{verification.address}}."
-msgstr "メッセージは{{verification.address}}により検証されました。"
+msgid "The message is verifiably from"
+msgstr "メッセージは検証可能です"
 
 #: public/views/dummy-translations.html
 msgid "The number of daily confirmed RVN transactions."
@@ -644,19 +665,19 @@ msgstr "このアドレスに対するトランザクションはありません
 
 #: public/views/transaction_sendraw.html
 msgid ""
-"This form can be used to broadcast a raw transaction in hex format over\n"
-"        the Ravencoin network."
+"This form can be used to broadcast a raw transaction in hex format over the "
+"Ravencoin network."
 msgstr ""
-"このフォームでは、16進数フォーマットの生のトランザクションをRavencoinネット"
-"ワーク上に配信することができます。"
+"このフォームは、Ravencoinネットワークを介して16進形式で生のトランザクションを"
+"ブロードキャストするために使用できます。"
 
 #: public/views/messages_verify.html
 msgid ""
-"This form can be used to verify that a message comes from\n"
-"        a specific Ravencoin address."
+"This form can be used to verify that a message comes from a specific "
+"Ravencoin address."
 msgstr ""
-"このフォームでは、メッセージが特定のRavencoinアドレスから来たかどうかを検証す"
-"ることができます。"
+"このフォームを使用して、メッセージが特定のRavencoinアドレスからのものであるこ"
+"とを確認できます。"
 
 #: public/views/statistics.html
 msgid "Time Between Blocks:"
@@ -673,6 +694,10 @@ msgstr "タイムスタンプ"
 #: public/views/block_list.html
 msgid "Today"
 msgstr "今日"
+
+#: public/views/pools.html
+msgid "total blocks found:"
+msgstr "見つかったブロックの合計："
 
 #: public/views/statistics.html
 msgid "Total Circulating Supply:"
@@ -703,8 +728,12 @@ msgid "Transaction"
 msgstr "トランザクション"
 
 #: public/views/transaction_sendraw.html
-msgid "Transaction succesfully broadcast.<br>Transaction id: {{txid}}"
-msgstr "トランザクションの配信に成功しました。<br>トランザクションID: {{txid}}"
+msgid "Transaction id:"
+msgstr "トランザクションID："
+
+#: public/views/transaction_sendraw.html
+msgid "Transaction succesfully broadcast."
+msgstr "トランザクションはブロードキャストに成功しました。"
 
 #: public/views/statistics.html
 msgid "Transaction Summary"
@@ -771,8 +800,20 @@ msgstr "プールを待っています..."
 msgid "Waiting for transactions..."
 msgstr "トランザクションを待っています..."
 
-#~ msgid "Charts"
-#~ msgstr "チャート"
+#~ msgid "{{p.uptime.Days}} days"
+#~ msgstr "{{p.uptime.Days}} days"
+
+#~ msgid "{{p.uptime.Hours}} hrs"
+#~ msgstr "{{p.uptime.Hours}} hrs"
+
+#~ msgid "{{p.uptime.Minutes}} mins"
+#~ msgstr "{{p.uptime.Minutes}} mins"
+
+#~ msgid "{{p.uptime.Seconds}} secs"
+#~ msgstr "{{p.uptime.Seconds}} secs"
+
+#~ msgid "Summary <small>confirmed</small>"
+#~ msgstr "サマリ <small>検証済み</small>"
 
 #~ msgid "Loading chart..."
 #~ msgstr "チャートを読み込んでいます..."
